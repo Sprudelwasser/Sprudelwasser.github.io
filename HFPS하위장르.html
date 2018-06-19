@@ -133,6 +133,7 @@ body {
     height: 100%;
     border: solid;
     border-width: 4px;
+    font-size: 16pt;
    
 }
 .check {
@@ -144,7 +145,7 @@ body {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
 }
 
 .row:hover {color: rgb(255, 130, 0);}
@@ -158,7 +159,7 @@ body {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
 }
 .row1:hover {color: rgb(157, 255, 0);}
 
@@ -173,6 +174,18 @@ body {
 
 .p1 {
     font-size: 15pt;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 45%;
+  height: 30%;
+  margin: 2.5%;
+  
 }
 
 </style>
@@ -217,9 +230,12 @@ body {
 
 <div id="Old-School" class="tabcontent">
   <h1>Old-School Shooter</h1>
-  <img src="https://images4.alphacoders.com/202/20248.jpg" width="50%"; max-height="400px"; style="float: left; margin-bottom: 5%;">
-  <img src="http://www.pcgamesarchive.com/archive/q/quake-3-arena/wallpapers/quake-3-arena-4.jpg" width="50%"; max-height="400px"; style="float: right;">
   
+  <div class="flex-container">
+        <div><img src="https://images4.alphacoders.com/202/20248.jpg" width="100%"; height="100%";></div>
+        <div><img src="http://www.pcgamesarchive.com/archive/q/quake-3-arena/wallpapers/quake-3-arena-4.jpg" width="100%"; height="100%";></div>
+  </div>
+
   <p class="p1" style="clear: both;">국내에서 고전 FPS라고 불리는 올드스쿨 슈터는 말 그대로 FPS의 태동기인 90년대에 나온 작품을 통칭하거나 현대에 개발된 게임이 90년대의 특성을 가지고 있을 경우 이러한 명칭으로 불립니다.</p>
   <p class="p1">올드스쿨 슈터의 가장 큰 특징은 바로 "비현실성" 입니다.</p>
   <p class="p1">배경부터가 SF나 판타지적 요소로 산재해있으며, 등장하는 적의 종류도 인간, 로봇, 괴물, 신적 존재 등 다양합니다.</p>
@@ -262,8 +278,12 @@ body {
 
 <div id="Modern-Military" class="tabcontent">
   <h1>Modern-Military Shooter</h1>
-  <img src="http://paperlief.com/images/arma-3-wallpaper-4.jpg" width="50%"; max-height="400px"; style="float: left;">
-  <img src="https://images8.alphacoders.com/508/508353.jpg" width="50%"; max-height="400px"; style="float: right; margin-bottom: 5%;">
+
+    <div class="flex-container">
+        <div><img src="http://paperlief.com/images/arma-3-wallpaper-4.jpg" width="100%"; height="100%";></div>
+        <div><img src="https://images8.alphacoders.com/508/508353.jpg" width="100%"; height="100%";></div>
+    </div>
+
   <p class="p1" style="clear: both;">국내에서 현대 FPS라고 불리는 MMS는 올드스쿨 슈터와는 정반대의 특성을 가지고 있습니다.</p>
   <p class="p1">MMS의 가장 뚜렷한 특성은 바로 "현실성"입니다.</p>
   <p class="p1">올드스쿨 슈터와 비교했을 때, 개인의 능력의 비중이 높은 요소를 제외하면 현실성을 위해 전반적인 유저 편의성은 낮고 난이도는 높은 편입니다.</p>
