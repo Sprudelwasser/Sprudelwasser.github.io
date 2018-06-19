@@ -25,7 +25,7 @@ body {
 }
 .topnav {
     overflow: hidden;
-    background-color: rgb(255, 170, 0);
+    background-color: rgb(80, 80, 80);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -85,11 +85,15 @@ body {
     display: block;
 }
 .Stitle {
-    margin-top: 2%;
-    color:white;
-    background-color:rebeccapurple;
+    margin: 5% 20% 5%;
+    color: red;
+    background-color: none;
     font-size: 30pt;
-    width:100%;
+    border-top: none;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: none;
+    width:60%;
     height:100;
     margin-bottom: 2%;
 }
@@ -131,13 +135,46 @@ body {
     border-width: 4px;
    
 }
+.check {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    background-color: black;
+    color: rgb(255, 80, 0);
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.row:hover {color: rgb(255, 130, 0);}
+
+.check1 {
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    background-color: black;
+    color: olivedrab;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+}
+.row1:hover {color: rgb(157, 255, 0);}
 
 #Old-School {background-color: black; color: rgb(255, 80, 0); border-color: rgb(255, 80, 0);}
-#Modern-Military {background-color: black; color: olive; border-color: olive;}
+#Modern-Military {background-color: black; color: olivedrab; border-color: olivedrab;}
+
+.T {
+    width: 40%;
+    text-align: left;
+    padding: 8px;
+}
 
 .p1 {
     font-size: 15pt;
 }
+
 </style>
 </head>
 
@@ -156,7 +193,6 @@ body {
                 <div class="dropdown-content">
                   <a href="HFPShistory.html">FPS의 역사</a>
                   <a href="HFPS하위장르.html">하위 장르</a>
-                  <a href="#">주요 시리즈</a>
                 </div>
               </div> 
         <div class="dropdown">
@@ -166,7 +202,6 @@ body {
           <div class="dropdown-content">
             <a href="HFPSfps의플랫폼.html">FPS의 플랫폼</a>
             <a href="HFPSesports와FPS.html">E-sports와 FPS</a>
-            <a href="#">Link 3</a>
           </div>
         </div> 
 </div>
@@ -177,18 +212,100 @@ body {
 
 <div class="MainTab">
 <button class="tablink" onclick="openPage('Old-School', this, 'rgb(255, 80, 0)')"><b>Old-School</b></button>
-<button class="tablink" onclick="openPage('Modern-Military', this, 'olive')" id="defaultOpen"><b>Modern-Military</b></button>
+<button class="tablink" onclick="openPage('Modern-Military', this, 'olivedrab')" id="defaultOpen"><b>Modern-Military</b></button>
 
 
 <div id="Old-School" class="tabcontent">
   <h1>Old-School Shooter</h1>
-  <p class="p1">국내에서 고전 FPS라고 불리는 올드스쿨 슈터는 말 그대로 FPS의 태동기인 90년대에 나온 작품을 통칭하거나 현대에 개발된 게임이 90년대의 특성을 가지고 있을 경우 이러한 명칭으로 불립니다.</p>
+  <img src="https://images4.alphacoders.com/202/20248.jpg" width="50%"; max-height="400px"; style="float: left; margin-bottom: 5%;">
+  <img src="http://www.pcgamesarchive.com/archive/q/quake-3-arena/wallpapers/quake-3-arena-4.jpg" width="50%"; max-height="400px"; style="float: right;">
+  
+  <p class="p1" style="clear: both;">국내에서 고전 FPS라고 불리는 올드스쿨 슈터는 말 그대로 FPS의 태동기인 90년대에 나온 작품을 통칭하거나 현대에 개발된 게임이 90년대의 특성을 가지고 있을 경우 이러한 명칭으로 불립니다.</p>
   <p class="p1">올드스쿨 슈터의 가장 큰 특징은 바로 "비현실성" 입니다.</p>
+  <p class="p1">배경부터가 SF나 판타지적 요소로 산재해있으며, 등장하는 적의 종류도 인간, 로봇, 괴물, 신적 존재 등 다양합니다.</p>
+  <p class="p1">플레이어 캐릭터의 이동속도는 매우 빠르고, 로켓 점프 등의 현실에서는 절대로 불가능한 기술을 구사할 수 있는 초인적인 존재로 묘사됩니다.</p>
+  <br>
+  <p class="p1">이외의 특성은 간략하게 정리할 수 있습니다.</p>
+  <div style="overflow-x:auto;">
+        <table class="check">
+          <tr class="row">
+            <th class="T">대상</th>
+            
+            <th class="T">특성</th>
+          </tr>
+          <tr class="row">
+            <td class="T">진행</td>
+            
+            <td class="T">간소함</td>
+            
+          </tr>
+          <tr class="row">
+            <td class="T">캐릭터</td>
+            
+            <td class="T">초인적인 능력</td>
+            
+          </tr>
+          <tr class="row">
+            <td class="T">아이템</td>
+            
+            <td class="T">많은 무기, 필드 아이템 </td>
+           
+          </tr>
+          <tr class="row">
+            <td class="T">레벨 디자인</td>
+            
+            <td class="T">비선형, 뚜렷한 경계, 퍼즐 요소, SF나 판타지</td>
+          </tr>
+        </table>
+      </div>
 </div>
 
 <div id="Modern-Military" class="tabcontent">
   <h1>Modern-Military Shooter</h1>
-  <p>Some news this fine day!</p> 
+  <img src="http://paperlief.com/images/arma-3-wallpaper-4.jpg" width="50%"; max-height="400px"; style="float: left;">
+  <img src="https://images8.alphacoders.com/508/508353.jpg" width="50%"; max-height="400px"; style="float: right; margin-bottom: 5%;">
+  <p class="p1" style="clear: both;">국내에서 현대 FPS라고 불리는 MMS는 올드스쿨 슈터와는 정반대의 특성을 가지고 있습니다.</p>
+  <p class="p1">MMS의 가장 뚜렷한 특성은 바로 "현실성"입니다.</p>
+  <p class="p1">올드스쿨 슈터와 비교했을 때, 개인의 능력의 비중이 높은 요소를 제외하면 현실성을 위해 전반적인 유저 편의성은 낮고 난이도는 높은 편입니다.</p>
+  <p class="p1">플레이어들은 현실에 존재하거나 존재할 법한 가상의 공간에서 그와 비슷한 특성의 장비를 가지고 상대 플레이어와 겨룹니다.</p>
+  <p class="p1">플레이어 캐릭터도 대부분 더이상 선천적인 초인이 아닌 현실의 군인의 능력을 가지고 있으며, 강화복을 입거나 강화 수술을 통해 제한적으로 초인적인 능력을 발휘할 수 있습니다.</p>
+  <br>
+  <p class="p1">이외의 특성을 간략하게 정리할 수 있습니다.</p>
+  
+
+  <div style="overflow-x:auto;">
+        <table class="check1">
+          <tr class="row1">
+            <th class="T">대상</th>
+            
+            <th class="T">특성</th>
+          </tr>
+          <tr class="row1">
+            <td class="T">진행</td>
+            
+            <td class="T">복잡함</td>
+            
+          </tr>
+          <tr class="row1">
+            <td class="T">캐릭터</td>
+            
+            <td class="T">일반인의 능력</td>
+            
+          </tr>
+          <tr class="row1">
+            <td class="T">아이템</td>
+            
+            <td class="T">제한된 무기, 개인 장비</td>
+           
+          </tr>
+          <tr class="row1">
+            <td class="T">레벨 디자인</td>
+            
+            <td class="T">선형, 유기적, 현실적</td>
+          </tr>
+        </table>
+      </div>
+
 </div>
 </div>
 </body>
