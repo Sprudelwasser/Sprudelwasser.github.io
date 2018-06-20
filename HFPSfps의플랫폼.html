@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-          <title> HFPS/FPS의 플랫폼</title>
+          <title> HFPS/fps의 플랫폼</title>
             <meta charset="utf-8">
             <meta name="author" content="Moon, Jongseok">
-            <meta name="description" content="HFPS/FPS의 플랫폼">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="HFPS/e-sports와 FPS">
 <style>
 @import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
 body {
     margin: 0%;
-    font-family: "Noto Sans KR" !important;
-    background-color: rgb(10, 10, 10);
+    
+    background-color: rgb(8, 8, 8);
     border-image-repeat: no-repeat;
 }
 .HFPS-title {
@@ -22,7 +22,6 @@ body {
     font-size: 30pt;
     text-align: center;
 }
-
 .topnav {
     overflow: hidden;
     background-color: rgb(80, 80, 80);
@@ -47,7 +46,7 @@ body {
     font-size: 16px;    
     border: none;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -84,53 +83,6 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-.sidenav {
-    height: auto;
-    width: 10%;
-    margin-top: 25%;
-    margin-left: 90%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(63, 63, 63, 0.308);
-    overflow-x: hidden;
-    padding-top: 5px;
-}
-
-.sidenav a, .dropdown-btn {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 5%;
-    padding-right: 10%;
-    text-decoration: none;
-    font-size: 15pt;
-    color: rgb(120, 120, 120);
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-}
-
-.sidenav a:hover{
-        color: rgb(43, 255, 0);
-} 
-.dropdown-btn:hover {
-    color: rgb(0, 225, 255);
-}
-
-
-.dropdown-container {
-    display: none;
-    background-color: rgba(5, 5, 5, 0.6);
-    height: auto;
-}
-
-
 .Stitle {
     margin: 5% 20% 5%;
     color: red;
@@ -144,298 +96,326 @@ body {
     height:100;
     margin-bottom: 2%;
 }
-
-
-* {box-sizing: border-box}
-body {font-family: inherit;}
-
-
-.vtab {
-    float: left;
-    border: 0;
-    background-color: #a8a8a8;
-    width: 30%;
-    height: 300px;
-}
-
-
-.vtab button {
-    display: block;
-    background-color: rgb(160, 0, 0);
-    color: white;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    font-family: inherit;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-
-.vtab button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 81, 0);
-}
-
-
-.vtab button.active {
-    background-color: yellow;
-    color: black;
-}
-
-
-.vtabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid rgb(160, 0, 0);
-    background-color: rgb(0, 0, 0);
-    color: yellow;
-    width: 70%;
-    border-left: none;
-    height: 300px;
-}
-.brief {
-    width: 100%;
-}
-.HFPS-Article {
-    margin-top: 40%;
-    width: 80%;
-    margin-left: 5%;
-    margin-right: 15%;
-    height: 100%;
+.Entry{
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-height: 800px;
     
-    background-color: rgb(10, 10, 10);
-    color: white;
-    font-size: 15pt;
 }
-pre {
-    font-family: inherit;
+img {
+    border: solid;
+    border-color: dimgray;
+    border-width: 4px;
+}
+.Preface {
+    max-width: 80%;
+    margin: 5% 10% 5%;
+    border: solid;
+    border-color: cyan;
+    border-width: 4px;
+    background-color: black;
+    color: cyan; 
+}
+.Paragraph {
+    max-width: 90%;
+    margin: 5%;
+    border: solid;
+    border-color: white;
+    border-width: 4px;
+    background-color: black;
+    color: white; 
+}
+
+.accordion {
+    background-color: black;
+    color: green;
+    cursor: pointer;
+    margin: 2% 40% 2%;    
+    padding: 18px;
+    width: 20%;
+    border: none;
+    text-align: center;
+    outline: solid;
+    outline-width: 4px;
+    outline-color: green;
+    font-size: 20pt;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.active, .accordion:hover {
+    background-color: black;
+    color: lightgreen;
+    margin: 2% 5% 0%;    
+    padding: 18px;
+    width: 90%;
+    outline: none;
+    border: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-width: 6px;
+    border-color: lightgreen;
+    font-size: 22pt;
+    transition: 0.5s;
+}
+
+.panel {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: none;
+    background-color: black;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 6px;
+    border-color: lightgreen;
+    overflow: hidden;
+    color: lightgreen;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.p{
+    font-size: 15pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: cyan;
+    margin: 1%;
 }
 
 .p1{
-        width: 100%;
-        margin-bottom: 2%;
-        color: white;
-        font-size: 15pt;
-        text-align: left;
+    font-size: 15pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    color: lightgreen;
+    margin: 1%;
 }
-.p1:hover {
-        color: yellow;
-}
-h1 {
-    width: 100%;
-    font-size: 40pt; 
+.p2{
+    font-size: 15pt;
+    font-family: 'Nanum Gothic Coding', monospace;
     color: white;
-}
-img {
-        width: 60%;
-        height: 500px;
-        margin-top: 2%;
-        margin-right: 40%;
-        margin-bottom: 2%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: grey;
-}
-.tooltip {
-    position: relative;
-    display: inline;
-    border-bottom: 1px solid orange;
+    margin: 1%;
 }
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.95);
-    color: orange;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+.VidGrid {
+width: 70%;
+height: 500px;
+margin: 5% 15% 5%;
 }
 
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+.ImgGrid {
+width: 70%;
+height: 500px;
+margin: 5% 15% 5%;
 }
+
 </style>
 </head>
-<body>
-<div class="HFPS-title">
-<b style="margin-left: 30px; font-family: 'Ubuntu', sans-serif;">FIRST PERSON SHOOTER</b>
-</div>
-<div class="topnav">
-    <a href="HFPS.html">홈으로</a>
-    <div class="dropdown">
-            <button class="dropbtn">주요 내용 
-              <i class="Yup"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="HFPShistory-1-.html">FPS의 역사</a>
-              <a href="HFPS하위장르.html">하위 장르</a>
-            </div>
-          </div> 
-    <div class="dropdown">
-      <button class="dropbtn">그 외 
-        <i class="Yup"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="HFPSfps의플랫폼.html">FPS의 플랫폼</a>
-        <a href="HFPSesports와FPS.html">E-sports와 FPS</a>
-      </div>
-    </div> 
-</div>
 
-<div style="width: 10%;">
-
-</div>
+            
+    <body>
+    <div class="HFPS-title">
+    <b style="margin-left: 30px; font-family: 'Ubuntu', sans-serif;">FIRST PERSON SHOOTER</b>
+    </div>
     
+    <div class="topnav">
+        <a href="HFPS.html">홈으로</a>
+        <div class="dropdown">
+                <button class="dropbtn">주요 내용 
+                  <i class="Yup"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="HFPShistory-1-.html">FPS의 역사</a>
+                  <a href="HFPS하위장르.html">하위 장르</a>
+                </div>
+              </div> 
+        <div class="dropdown">
+          <button class="dropbtn">그 외 
+            <i class="Yup"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="HFPSfps의플랫폼.html">FPS의 플랫폼</a>
+            <a href="HFPSesports와FPS.html">E-sports와 FPS</a>
+          </div>
+        </div> 
+</div>
+
 <div class="Stitle">
     <center>FPS의 플랫폼</center>
 </div>
+<div class="Entry">
+        <img  src="https://www.esl-one.com/uploads/pics/20170603_Helena-Kristiansson_EPL-Dallas_03031.jpg" alt="ESL_CSGO" width="100%" height="100%">
+</div>
 
-<div class="sidenav">
-    <a href="#top">맨 위로</a>
-    <button class="dropdown-btn">문서 내 이동
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-      <a href="#PCs">PC</a>
-      <a href="#Consoles">Console</a>
-      <a href="#현황s">현황</a>
+<div id="PrefaceS" class="Preface">
+    <p class="p">Esports는 이제 우리들의 삶에 가까이 다가왔습니다. 특히 국내에서는 Starcraft를 필두로 엄청난 인기를 구사하였고, Special Force와 Sudden Attack, AVA를 거쳐 League of Legends와 PlayerUnknown's Battlegrounds 까지 지속되고 있습니다. 거기에 2018 아시안게임 정식 종목으로까지 등재되었고 2024파리 올림픽에서도 등재할지 의논중입니다. 이제 공영방송에서 Esports 경기를 보는 날도 머지 않은 것입니다.</p>
+
+    <p class="p">그나저나... 혹시 여러분은 TV로 경기들을 보면서 Esports가 언제부터 시작되었는지, 특히 FPS가 주 종목이 된 때는 언제였는지 궁금했던 적이 있습니까?</p>
+
+    <button class="accordion">-주석-</button>
+    <div class="panel">
+        <p class="p1">이 웹페이지의 제목을 보셨거나 해외의 FPS의 역사 내용을 보셨거나... 아무튼 눈치는 채셨을 겁니다. </p>
+    </div>
+    <p class="p">Esports와 FPS가 얽힌 이야기, 그 중에서도 그 기원에 대하여 풀어나가보겠습니다.</p>
+
+    <div id="ParagraphS" class="Paragraph">
+        <h1 id="PCs" class="p2">PC</h1>
+
+        <div class="ImgGrid">
+            <img width="100%" height="100%" src="https://brain-images-ssl.cdn.dixons.com/2/1/10167312/u_10167312.jpg" alt="PC">
+        </div>
+        
+        <p class="p2">
+            PC와 FPS의 발전의 역사는 그 궤를 같이 할 정도로 PC는 FPS 게임에 가장 최적화된 플랫폼입니다.
+        </p>
+
+        
+
+        <p class="p2">
+            PC라는 명칭은 IBM에서 개발한 업무용 컴퓨터용 아키텍처 가운데 하나였습니다. 이 모델이 시장에서 크게 성공하여 대량 공급되었고, IBM측에서 다른 회사에 아키텍처를 공개함으로써 PC는 컴퓨터 시장의 표준으로 완전히 자리잡았습니다.
+        </p>
+        <p class="p2">
+            사실, PC의 태생은 게임과는 관련이 없었습니다. 초창기의 PC는 어디까지나 계산, 사무처리를 목적으로 제작되었기 때문에 장착된 하드웨어와 구동되는 프로그램은 그에 맞게 제작되었습니다. 기본적인 UI 디자인도 지금과는 달리 텍스트로만 이루어진 CUI나 TUI였습니다.
+        </p>
+
+        <button class="accordion">-주석-</button>
+        <div class="panel">
+
+            <div class="ImgGrid">
+                <img width="100%" height="100%" src="https://www.theinquirer.net/w-images/019c63c6-b325-4b9b-bec8-c4f32747bccb/0/pc5150color-540x334.jpg?1472372301" alt="IBM PC">
+            </div>
+
+            <div class="ImgGrid">
+                    <img width="100%" height="100%" src="https://www.theinquirer.net/w-images/6aa71ad9-fe4d-4ff5-b267-e1b802497332/0/ibmpc303-230x230.jpg?1428342338" alt="Working with IBM PC">
+            </div>
+
+            <p class="p1"> 그러니까, 원래는 직원들이 이렇게 해맑게 웃으며 야근을 할 수 있도록 만들어졌다는 겁니다...</p>
+            
+        </div>
+
+        <p class="p2">
+            PC가 게임의 플랫폼으로 선택된 가장 큰 배경은 PC에 대한 국가의 전폭적인 지원이었습니다. 덕분에 PC는 기존의 기능이 보강되는 동시에 지원하는 기능이 기하급수적으로 늘어났고, 정밀한 3차원 공간을 표현하는 기술이 빠르게 발전할 수 있었습니다. 1인칭 시점 게임의 장점들 중 하나가 게이머들이 느끼는 몰입감이 매우 크다는 것을 고려하면 이는 커다란 이점이었습니다.
+        </p>
+        <p class="p2">
+            PC의 주요 조작은 키보드와 마우스의 조합으로 실행됩니다. 이들도 처음에는 글자를 입력하고 UI를 활용하는 등 사용자의 편의를 위한 단순한 목적으로 제작되었습니다. 그러나, 특유의 직관적이고 정밀한 조작이 가능하다는 점은 짧은 시간 내의 정밀한 조작을 요구하는 FPS, RTS등의 장르에 완벽히 어울렸습니다.
+        </p>
+
+        <button class="accordion">-주석-</button>
+        <div class="panel">
+
+            <div class="ImgGrid">
+                <img width="100%" height="100%" src="https://i.ebayimg.com/00/s/NjgzWDEwMjQ=/z/g3cAAOSw14xWQHRz/$_86.JPG" alt="Unicomp 101 mechanical keyboard">
+            </div>
+
+            <div class="ImgGrid">
+                    <img width="100%" height="100%" src="http://www.dansdata.com/images/moremouses/newexprear_440.jpg" alt="Microsoft Intelimouse 3.0">
+            </div>
+
+            <p class="p1">머지않아 이 마우스는 게이밍 마우스의 시초가 됩니다.</p>
+            
+        </div>
+
+    </div>
+
+ <p class="p"> 1990년대에는 무슨 일이 벌어졌을까요? 물론, 정답은 FPS의 등장이었습니다. </p>
+ <p class="p">80년대에는 플레이어가 각자의 게임을 플레이하면서 점수를 비교하는 식이었으나, WWW(World Wide Web)로 대표되는 인터넷 통신 기술의 대대적인 발전 덕분에 하나의 게임에 많은 사람들이 동시에 참여할 수 있게 되었습니다.
+        또한, 어떤 일이 생기면 그 소식이 전세계로 퍼지는 것은 시간 문제 조차도 되지 않을 정도로 의사소통의 범위가 광대화되었습니다. 이는 컴퓨터나 TV만 있다면 누가 어디에 있던 상관없이 게임 대회 중계를 볼 수 있다는 것을 의미했습니다.</p>
+
+    <div id="ParagraphS" class="Paragraph">    
+        <h1 id="Consoles" class="p2">Console</h1>
+
+        <div class="ImgGrid">
+                <img width="100%" height="100%" src="https://brain-images-ssl.cdn.dixons.com/2/1/10167312/u_10167312.jpg" alt="PC">
+        </div>
+
+        <p class="p2">
+                Video Game Console, 이하 콘솔은 1970년대에 발전하기 시작해서 누군가 게임을 한다고 하면 거실이나 안방에서 양손에는 컨트롤러를 쥐고 입으로 뭔가를 마시거나 먹고 있는 것을 상상할 정도로 전세계 사람들에게 유명한 플랫폼입니다.
+        </p>
+        <p class="p2">
+                콘솔의 역사를 간단하게 요약하자면, 미국의 부자 가문에서 풍족하게 자라던 꼬마가 ET의 습격으로 가문의 사람들이 커다란 구덩이에 파묻히기 직전에 커다란 대검을 든 동쪽 섬나라 출신의 금발 사무라이에게 혼자 구출되고 그의 양자가 되어 세계를 평정하고 있는데, 사실 살아있던 동생이 재기하여 형과 대결하고 있다고 말할 수 있을 겁니다.
+        </p>
+        <p class="p2">
+                콘솔의 물리적 구조는 마더보드에 CPU와 그래픽 카드, RAM, 하드디스크나 SSD, 그리고 Blu-Ray 혹은 DVD플레이어 등으로 되어있는데 사실상 PC의 범용성을 극단적으로 낮추었다고 보면 됩니다. 애초에 만들어진 목적이 게임플레이이기 때문이죠. 거기에 콘솔은 게임기로써의 가격을 고려해서 CPU보다는 그래픽 카드 쪽의 투자가 큽니다. 이것도 PC 견적 짤때 가성비 빌드로 CPU보다 GPU에 더 투자하는 것과 일맥상통합니다.
+        </p>
+        <p class="p2">
+                PC와는 다른 콘솔만의 차이점을 살펴보자면, 콘솔은 게임기이기 때문에 잡다한 백그라운드 프로그램이 없으므로 게임플레이가 더 쾌적합니다. 또, 특정 브랜드의 특정 세대 콘솔은 기본적으로 사양이 동일하기 때문에 게임 개발자 입장에서는 최적화 작업이 쉽고, 게이머들 입장에서는 오류날 일이 거의 없이 게임을 즐길 수 있고, 신작 게임이 하향지원 된다면 새 기기를 새로 살 필요가 없습니다.
+        </p>
+
+        <br>
+
+        <p class="p2">
+                다만, FPS의 플랫폼으로써의 콘솔은 적합하지 않습니다. FPS 장르에서 콘솔이 기피당하던 가장 큰 이유는 바로 조작체계였습니다.
+        </p>
+        <p class="p2">
+                예나 지금이나 콘솔이 PC를 따라갈 수 없는 것이 있다면, 바로 물리적인 조작의 정확성입니다. 콘솔의 게임패드는 버튼과 스틱으로 구성되는데, 버튼의 경우 키보드의 스위치랑 비교해서 약간의 입력지연을 제외하면 큰 문제가 없지만, 스틱과 마우스를 비교하면 격차가 큽니다. 이는 디지털과 아날로그의 차이점이라고 보면 되는데,
+     예를 들어, 마우스를 A에서 B로 움직이고 멈추면 화면도 그에 맞게 움직이다 멈추지만, 스틱으로 그렇게 기울인채 멈추면 화면은 계속 움직입니다. 화면의 움직임을 멈추기 위해서는 스틱에서 손가락을 때야 합니다. 멈춘 상태에서 화면을 다시 움직이려면 마우스는 그대로 다시 움직이면 되지만, 스틱은 다시 손가락을 대고 기울여야 합니다. 그렇기에 게임패드는 순간적인 조작을 중요시하는 FPS에는 적합하지 않습니다. FPS 프로게이머들 중에 트랙볼을 쓰는 사람은 있어도 게임패드를 사용하는 사람은 단 한명도 없다는 것에서 이 사실을 알 수 있습니다.
+        </p>
+
+        <button class="accordion">-주석-</button>
+        <div class="panel">
+
+            <div class="ImgGrid">
+                <img width="100%" height="100%" src="https://i.ebayimg.com/00/s/NjgzWDEwMjQ=/z/g3cAAOSw14xWQHRz/$_86.JPG" alt="Unicomp 101 mechanical keyboard">
+            </div>
+
+            <div class="ImgGrid">
+                    <img width="100%" height="100%" src="http://www.dansdata.com/images/moremouses/newexprear_440.jpg" alt="Microsoft Intelimouse 3.0">
+            </div>
+
+            <p class="p1">머지않아 이 마우스는 게이밍 마우스의 시초가 됩니다.</p>
+            
+        </div>
+
     </div>
     
+    <p class="p">이렇듯 게임을 좋아하고 즐기는 사람들이 뜻을 모은 자발적인 모인 덕분에, FPS는 esports의 영광스러운 창립 멤버가 될 수 있었습니다.</p>
     
-</div>
-
-<div class="brief">
-<div style="width: 60%; margin-left: 20%; margin-right: 20%;">
-        <h1 style="color: orangered; text-align: left;">미리보는 요약</h1>
-    <div class="vtab">
-            <button class="vtablinks" onclick="openTab(event, 'PC')" id="defaultOpen">PC</button>
-            <button class="vtablinks" onclick="openTab(event, 'Console')">Console</button>
-            <button class="vtablinks" onclick="openTab(event, '현황')">현황</button>
-          </div>
-          
-          <div id="PC" class="vtabcontent">
-            <p> 본체 + 모니터 + 키보드 + 마우스 + 기타 악세사리의 조합으로 이루어진 장치. 게이밍을 위해서 탄생하지는 않았으나, CPU, 그래픽 카드 등의 부품의 성능이 발전하면서 높은 기술을 요구하는 소프트웨어를 구동 가능하게 되었고, 게임의 주력 플랫폼의 자리를 차지하게 되었음.
-    
-            </p>
-          </div>
-          
-          <div id="Console" class="vtabcontent">
-            <p> 소위 "게임기"라고 일컬어지는 장치.
-                본체 + 컨트롤러 + 모니터(주로 TV 등의 대화면)의 조합으로 이루어졌으며, 본체에 게임 CD를 넣으면 게임 실행이 가능함.
-                 PC와는 반대로 게이밍을 위해 만들어진 장치이지만, DVD나 블루레이 등의 오디오 파일 재생기능 등의 부가기능이 생김.</p> 
-          </div>
-          
-          <div id="현황" class="vtabcontent">
-            <p>키보드+마우스 조합이 필요한 게임 장르는 PC가, 불필요한 게임 장르는 콘솔이 주도하였으나, 현재는 게임 디자인과 시스템이 콘솔에 맞춰 변화하면서 콘솔이 PC를 압도하고 있음.
-               
-            </p>
-          </div>
-
+    <div id="ParagraphS" class="Paragraph">    
+        <h1 id="현황s" class="p2">현황</h1>
+        
+        <p class="p2">
+                FPS는 XBOX에서 HALO 시리즈가 나오기 전까지는 오직 PC를 위한 게임이었습니다. 하지만, 게임 시장에서 PC보다 콘솔쪽의 수익이 훨씬 높고, 사회적으로도 PC 보다 콘솔로 게임하는 사람이 많다보니 FPS도 서서히 변하기 시작했습니다.
+        </p>
+        <p class="p2">
+                우선 게임이 '조준 지원'시스템을 채택했습니다. 패드로는 힘든 정밀한 조준을 돕기 위해 플레이어의 크로스헤어가 적의 근처에 도달하면 자동으로 적의 몸체로 고정되는(PC에서는 에임핵의 일종인)시스템입니다. 이 시스템의 도입으로 여태까지 적을 맞추기 위해 안간힘을 쓰던 사람들에게 큰 메리트를 부여했습니다.
+        </p>
+        <p class="p2">
+                두 번째 변경점은 레벨 디자인입니다. 이는 캐릭터와 더불어 기존의 FPS와 콘솔 FPS 또는 고전 FPS와 현대 FPS를 비교하면서 플레이하면 두드러지가 체감할 수 있는 요소 중 하나인데, 상대적으로 기존/고전 FPS는 복잡하고 콘솔/현대 FPS는 단순합니다. 앞서 말햇든 키보드 + 마우스의 조작이 직관적이고 정확하기 때문에 게이머들은 자유로운 컨트롤이 가능했습니다. 반면 게임패드는 그러지 못했기 때문에 게이머들은 전방위로 몰려나오는 적을 상대하는 것이 거의 불가능했습니다. 이러다 보니 제작자들은 맵의 고저차를 줄이고 전체적으로 완만한 구조를 이루도록 복합적인 시야 조작을 요구하는 디자인에서 간단한 시야 조작을 요구하도록 레벨을 바꿨습니다.
+        </p>
+        <p class="p2">
+                세 번째 변경점은 캐릭터 입니다. 이는 레벨 디자인과 연관점이 있는데, 그와 마찬가지로 단순하게 변했습니다. 캐릭터의 움직임은 둔해져서 조준하기 쉬워졌고, 한 번에 몰려오는 개체 수가 감소하여 연속적인 조준의 난이도와 플레이어가 입는 피해를 줄였습니다.
+        </p>
+        <p class="p2">
+                이 요소들은 조준 지원 시스템이 대중화 되면서 기존처럼 다시 복잡해지려는 양상을 띈 적이 있었지만, 멀티플레이에서 기능을 사용할 수 없는 등의 한계는 여전했기에 현재까지도 기존의 것 보다 전체적으로 단순한 모습을 하고 있습니다. 이는 FPS의 진입장벽이 낮아지는 결과를 야기했고, 더욱 많은 사람들이 콘솔 FPS를 접하면서 유저 수가 PC 유저의 수를 넘어섰습니다.
+        </p>
+        <p class="p2">
+                그렇다고 PC가 몰락한 것은 절대 아닙니다. 지원이 있어도 여전히 게임패드의 조작은 키보드 + 마우스의 조작을 따라올 수 없습니다. 또한 E-Sports같은 FPS 리그도 엄연히 PC로 진행되는 많큼 FPS에서의 PC의 입지는 계속 유지될 것입니다.
+        </p>
+        <p class="p2">
+                쉽게 말해, "FPS는 더이상 PC만의 전유물은 아니다."인 것이죠.
+        </p>
     </div>
-</div>
-<div class="HFPS-Article">
-<div id="PCs">
- 
- <h1>PC</h1>
- <img  src="https://brain-images-ssl.cdn.dixons.com/2/1/10167312/u_10167312.jpg"alt="PC"> 
- <p class="p1">PC와 FPS의 발전의 역사는 그 궤를 같이 할 정도로 PC는 FPS 게임에 가장 최적화된 플랫폼입니다. 
- </p>
- <img src="https://www.theinquirer.net/w-images/019c63c6-b325-4b9b-bec8-c4f32747bccb/0/pc5150color-540x334.jpg?1472372301" alt="IBM PC">
- <p class="p1">PC라는 명칭은 IBM에서 개발한 업무용 컴퓨터용 아키텍처 가운데 하나였습니다. 이 모델이 시장에서 크게 성공하여 대량 공급되었고, IBM측에서 다른 회사에 아키텍처를 공개함으로써 PC는 컴퓨터 시장의 표준으로 완전히 자리잡았습니다.</p>
- <img src="https://www.theinquirer.net/w-images/6aa71ad9-fe4d-4ff5-b267-e1b802497332/0/ibmpc303-230x230.jpg?1428342338" alt="IBM PC at office">
- <p class="p1">사실, PC의 태생은 게임과는 관련이 없었습니다. 초창기의 PC는 어디까지나 계산, 사무처리를 목적으로 제작되었기 때문에 장착된 하드웨어와 구동되는 프로그램은 그에 맞게 제작되었습니다. 기본적인 UI 디자인도 지금과는 달리 텍스트로만 이루어진<div class="tooltip">CUI<span class="tooltiptext">Command User Interface. aka. CLI(Command-Line Interface)</span></div>나 <div class="tooltip">TUI<span class="tooltiptext">Text User Interface</span></div>였습니다.</p>
- <p class="p1">PC가 게임의 플랫폼으로 선택된 가장 큰 배경은 PC에 대한 국가의 전폭적인 지원이었습니다. 덕분에 PC는 기존의 기능이 보강되는 동시에 지원하는 기능이 기하급수적으로 늘어났고, 정밀한 3차원 공간을 표현하는 기술이 빠르게 발전할 수 있었습니다. 1인칭 시점 게임의 장점들 중 하나가 게이머들이 느끼는 몰입감이 매우 크다는 것을 고려하면 이는 커다란 이점이었습니다.</p>
- <img  src="https://i.ebayimg.com/00/s/NjgzWDEwMjQ=/z/g3cAAOSw14xWQHRz/$_86.JPG"alt="Unicomp 101 mechanical keyboard"> <img  src="http://www.dansdata.com/images/moremouses/newexprear_440.jpg"alt="Microsoft Intelimouse 3.0"> 
- <p class="p1">PC의 주요 조작은 키보드와 마우스의 조합으로 실행됩니다. 이들도 처음에는 글자를 입력하고 UI를 활용하는 등 사용자의 편의를 위한 단순한 목적으로 제작되었습니다. 그러나, 특유의 직관적이고 정밀한 조작이 가능하다는 점은 짧은 시간 내의 정밀한 조작을 요구하는 FPS, RTS등의 장르에 완벽히 어울렸습니다. </p>
- </div>
-
- <div id="Consoles"> 
- <h1>Console</h1>
- <img  src="https://cdn.wccftech.com/wp-content/uploads/2017/09/xbox-one-x-vs-ps4-pro.png"alt="Console"> 
- <p class="p1">Video Game Console, 이하 콘솔은 1970년대에 발전하기 시작해서 누군가 게임을 한다고 하면 거실이나 안방에서 양손에는 컨트롤러를 쥐고 입으로 뭔가를 마시거나 먹고 있는 것을 상상할 정도로 전세계 사람들에게 유명한 플랫폼입니다.</p>
- <p class="p1">콘솔의 역사를 간단하게 요약하자면, 미국의 부자 가문에서 풍족하게 자라던 꼬마가 ET의 습격으로 가문의 사람들이 커다란 구덩이에 파묻히기 직전에 커다란 대검을 든 동쪽 섬나라 출신의 금발 사무라이에게 혼자 구출되고 그의 양자가 되어 세계를 평정하고 있는데, 사실 살아있던 동생이 재기하여 형과 대결하고 있다고 말할 수 있을 겁니다.</p>
- <p class="p1">콘솔의 물리적 구조는 마더보드에 CPU와 그래픽 카드, RAM, 하드디스크나 SSD, 그리고 Blu-Ray 혹은 DVD플레이어 등으로 되어있는데 사실상 PC의 범용성을 극단적으로 낮추었다고 보면 됩니다. 애초에 만들어진 목적이 게임플레이이기 때문이죠. 거기에 콘솔은 게임기로써의 가격을 고려해서 CPU보다는 그래픽 카드 쪽의 투자가 큽니다. 이것도 PC 견적 짤때 가성비 빌드로 CPU보다 GPU에 더 투자하는 것과 일맥상통합니다.</p>
- <p class="p1">PC와는 다른 콘솔만의 차이점을 살펴보자면, 콘솔은 게임기이기 때문에 잡다한 백그라운드 프로그램이 없으므로 게임플레이가 더 쾌적합니다. 또, 특정 브랜드의 특정 세대 콘솔은 기본적으로 사양이 동일하기 때문에 게임 개발자 입장에서는 최적화 작업이 쉽고, 게이머들 입장에서는 오류날 일이 거의 없이 게임을 즐길 수 있고, 신작 게임이 하향지원 된다면 새 기기를 새로 살 필요가 없습니다.</p>
- <p class="p1">다만, FPS의 플랫폼으로써의 콘솔은 적합하지 않습니다. FPS 장르에서 콘솔이 기피당하던 가장 큰 이유는 바로 조작체계였습니다.</p>
- <p class="p1">예나 지금이나 콘솔이 PC를 따라갈 수 없는 것이 있다면, 바로 물리적인 조작의 정확성입니다. 콘솔의 게임패드는 버튼과 스틱으로 구성되는데, 버튼의 경우 키보드의 스위치랑 비교해서 약간의 입력지연을 제외하면 큰 문제가 없지만, 스틱과 마우스를 비교하면 격차가 큽니다. 이는 디지털과 아날로그의 차이점이라고 보면 되는데,
-     예를 들어, 마우스를 A에서 B로 움직이고 멈추면 화면도 그에 맞게 움직이다 멈추지만, 스틱으로 그렇게 기울인채 멈추면 화면은 계속 움직입니다. 화면의 움직임을 멈추기 위해서는 스틱에서 손가락을 때야 합니다. 멈춘 상태에서 화면을 다시 움직이려면 마우스는 그대로 다시 움직이면 되지만, 스틱은 다시 손가락을 대고 기울여야 합니다. 그렇기에 게임패드는 순간적인 조작을 중요시하는 FPS에는 적합하지 않습니다. FPS 프로게이머들 중에 트랙볼을 쓰는 사람은 있어도 게임패드를 사용하는 사람은 단 한명도 없다는 것에서 이 사실을 알 수 있습니다.</p>
- </div>
- 
- <div id="현황s">
- <h1>현황</h1>
- <p class="p1">FPS는 XBOX에서 HALO 시리즈가 나오기 전까지는 오직 PC를 위한 게임이었습니다. 하지만, 게임 시장에서 PC보다 콘솔쪽의 수익이 훨씬 높고, 사회적으로도 PC 보다 콘솔로 게임하는 사람이 많다보니 FPS도 서서히 변하기 시작했습니다.</p>
- <p class="p1">우선 게임이 '조준 지원'시스템을 채택했습니다. 패드로는 힘든 정밀한 조준을 돕기 위해 플레이어의 크로스헤어가 적의 근처에 도달하면 자동으로 적의 몸체로 고정되는(PC에서는 에임핵의 일종인)시스템입니다. 이 시스템의 도입으로 여태까지 적을 맞추기 위해 안간힘을 쓰던 사람들에게 큰 메리트를 부여했습니다.</p>
- <p class="p1">두 번째 변경점은 레벨 디자인입니다. 이는 캐릭터와 더불어 기존의 FPS와 콘솔 FPS 또는 고전 FPS와 현대 FPS를 비교하면서 플레이하면 두드러지가 체감할 수 있는 요소 중 하나인데, 상대적으로 기존/고전 FPS는 복잡하고 콘솔/현대 FPS는 단순합니다. 앞서 말햇든 키보드 + 마우스의 조작이 직관적이고 정확하기 때문에 게이머들은 자유로운 컨트롤이 가능했습니다. 반면 게임패드는 그러지 못했기 때문에 게이머들은 전방위로 몰려나오는 적을 상대하는 것이 거의 불가능했습니다. 이러다 보니 제작자들은 맵의 고저차를 줄이고 전체적으로 완만한 구조를 이루도록 복합적인 시야 조작을 요구하는 디자인에서 간단한 시야 조작을 요구하도록 레벨을 바꿨습니다. </p>
- <p class="p1">세 번째 변경점은 캐릭터 입니다. 이는 레벨 디자인과 연관점이 있는데, 그와 마찬가지로 단순하게 변했습니다. 캐릭터의 움직임은 둔해져서 조준하기 쉬워졌고, 한 번에 몰려오는 개체 수가 감소하여 연속적인 조준의 난이도와 플레이어가 입는 피해를 줄였습니다.</p>
- <p class="p1">이 요소들은 조준 지원 시스템이 대중화 되면서 기존처럼 다시 복잡해지려는 양상을 띈 적이 있었지만, 멀티플레이에서 기능을 사용할 수 없는 등의 한계는 여전했기에 현재까지도 기존의 것 보다 전체적으로 단순한 모습을 하고 있습니다. 이는 FPS의 진입장벽이 낮아지는 결과를 야기했고, 더욱 많은 사람들이 콘솔 FPS를 접하면서 유저 수가 PC 유저의 수를 넘어섰습니다. </p>
- <p class="p1">그렇다고 PC가 몰락한 것은 절대 아닙니다. 지원이 있어도 여전히 게임패드의 조작은 키보드 + 마우스의 조작을 따라올 수 없습니다. 또한 E-Sports같은 FPS 리그도 엄연히 PC로 진행되는 많큼 FPS에서의 PC의 입지는 계속 유지될 것입니다.</p>
- <p class="p1">쉽게 말해, "FPS는 더이상 PC만의 전유물은 아니다."인 것이죠.</p>
-</div>
 </div>
 </body>
 <script>
-        function openPage(pageName,elmnt,color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(pageName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        
-        }
-       
-        document.getElementById("defaultOpen").click();
 
-function openTab(evt, TabName) {
-    var i, vtabcontent, vtablinks;
-    vtabcontent = document.getElementsByClassName("vtabcontent");
-    for (i = 0; i < vtabcontent.length; i++) {
-        vtabcontent[i].style.display = "none";
-    }
-    vtablinks = document.getElementsByClassName("vtablinks");
-    for (i = 0; i < vtablinks.length; i++) {
-        vtablinks[i].className = vtablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(TabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-
-document.getElementById("defaultOpen").click();
-
-var dropdown = document.getElementsByClassName("dropdown-btn");
+var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
-
-
+</script>
 </script>
 </html>
