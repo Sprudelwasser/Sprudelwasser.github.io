@@ -85,19 +85,23 @@ body {
     display: block;
 }
 .Stitle {
-    margin: 5% 20% 5%;
-    color: red;
-    background-color: none;
-    font-size: 30pt;
-    border-top: none;
-    border-left: solid;
-    border-right: solid;
-    border-bottom: none;
-    width:60%;
-    height:100;
-    margin-bottom: 2%;
+    font-size: 4.5vw;
+    font-weight: bold;
+    width: 50%;
+    height: 5%;
+    margin: 5% 25% 5%;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    -webkit-animation: neon 10s linear infinite;
+    
 }
-
+@-webkit-keyframes neon {
+    0% {color: red;}
+    25% {color: orange;}
+    50% {color: skyblue;}
+    75% {color: purple;}
+    100% {color: olive;}
+}
 .MainTab {
     width: 90%;
     margin: 0% 5% 0%;
@@ -145,10 +149,11 @@ body {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-    font-size: 18pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.7vw;
 }
 
-.row:hover {color: rgb(255, 130, 0);}
+.row:hover {color: rgb(255, 130, 0); font-size: 1.8vw; transition: 0.5s;}
 
 .check1 {
     width: 60%;
@@ -159,9 +164,10 @@ body {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
-    font-size: 18pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.7vw;
 }
-.row1:hover {color: rgb(157, 255, 0);}
+.row1:hover {color: rgb(157, 255, 0); font-size: 1.8vw; transition: 0.5s;}
 
 #Old-School {background-color: black; color: rgb(255, 80, 0); border-color: rgb(255, 80, 0);}
 #Modern-Military {background-color: black; color: olivedrab; border-color: olivedrab;}
@@ -173,7 +179,8 @@ body {
 }
 
 .p1 {
-    font-size: 15pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.3vw;
 }
 
 .flex-container {
@@ -187,6 +194,60 @@ body {
   margin: 2.5%;
   
 }
+
+.VidGrid {
+width: 60%;
+height: 500px;
+margin: 5% 20% 5%;
+}
+
+.popbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+  position: absolute; 
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  left: 0;
+  bottom: 0;
+  opacity:0;
+  padding: 20pt;
+  text-align: center;
+  text-decoration: none;
+}
+
+.popbox:hover .overlay {
+  opacity: 1;
+  
+}
+
+.MF {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.5vw;
+    padding: 10%;
+    color: white;
+    
+}
+.MF:hover {
+    font-weight: bolder;
+    font-size: 2vw;    
+    transition: 0.5s;
+}
+
 
 </style>
 </head>
@@ -231,10 +292,34 @@ body {
 <div id="Old-School" class="tabcontent">
   <h1>Old-School Shooter</h1>
   
-  <div class="flex-container">
-        <div><img src="https://images4.alphacoders.com/202/20248.jpg" width="100%"; height="100%";></div>
-        <div><img src="http://www.pcgamesarchive.com/archive/q/quake-3-arena/wallpapers/quake-3-arena-4.jpg" width="100%"; height="100%";></div>
-  </div>
+    <div class="flex-container">
+        <div>
+                <div class="popbox">
+                        <img src="https://images4.alphacoders.com/202/20248.jpg" class="image">
+                        <a href="https://youtu.be/lPDjzgOR8RI?t=12s" target="blank">
+                            <div class="overlay">
+                                    <p class="MF">플레이 영상을 보고 싶으면 클릭</p>
+                            </div>
+                        </a>
+                </div>
+            
+        </div>
+        <div>
+                <div class="popbox">
+                        <img src="http://www.pcgamesarchive.com/archive/q/quake-3-arena/wallpapers/quake-3-arena-4.jpg" class="image";>
+                        <a href="https://www.youtube.com/watch?v=cRV0tclxXMQ" target="blank">
+                            <div class="overlay">
+                                    <p class="MF">플레이 영상을 보고 싶으면 클릭</p>
+                            </div>
+                        </a>
+                </div>
+            
+        </div>
+    </div>
+
+    
+  
+  
 
   <p class="p1" style="clear: both;">국내에서 고전 FPS라고 불리는 올드스쿨 슈터는 말 그대로 FPS의 태동기인 90년대에 나온 작품을 통칭하거나 현대에 개발된 게임이 90년대의 특성을 가지고 있을 경우 이러한 명칭으로 불립니다.</p>
   <p class="p1">올드스쿨 슈터의 가장 큰 특징은 바로 "비현실성" 입니다.</p>
@@ -273,15 +358,39 @@ body {
             <td class="T">비선형, 뚜렷한 경계, 퍼즐 요소, SF나 판타지</td>
           </tr>
         </table>
-      </div>
+    </div>
+
+    <div class="VidGrid">
+
+    </div>
 </div>
 
 <div id="Modern-Military" class="tabcontent">
   <h1>Modern-Military Shooter</h1>
 
-    <div class="flex-container">
-        <div><img src="http://paperlief.com/images/arma-3-wallpaper-4.jpg" width="100%"; height="100%";></div>
-        <div><img src="https://images8.alphacoders.com/508/508353.jpg" width="100%"; height="100%";></div>
+  <div class="flex-container">
+        <div>
+                <div class="popbox">
+                        <img src="http://paperlief.com/images/arma-3-wallpaper-4.jpg" class="image">
+                        <a href="https://www.youtube.com/watch?v=2_QgMj52NfE" target="blank">
+                            <div class="overlay">
+                                    <p class="MF">플레이 영상을 보고 싶으면 클릭</p>
+                            </div>
+                        </a>
+                </div>
+            
+        </div>
+        <div>
+                <div class="popbox">
+                        <img src="https://images8.alphacoders.com/508/508353.jpg" class="image";>
+                        <a href="https://www.youtube.com/watch?v=xQVd1EHk9jQ" target="blank">
+                            <div class="overlay">
+                                    <p class="MF">플레이 영상을 보고 싶으면 클릭</p>
+                            </div>
+                        </a>
+                </div>
+            
+        </div>
     </div>
 
   <p class="p1" style="clear: both;">국내에서 현대 FPS라고 불리는 MMS는 올드스쿨 슈터와는 정반대의 특성을 가지고 있습니다.</p>

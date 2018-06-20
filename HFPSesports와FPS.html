@@ -83,19 +83,26 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .Stitle {
-    margin: 5% 20% 5%;
-    color: red;
-    background-color: none;
-    font-size: 30pt;
-    border-top: none;
-    border-left: solid;
-    border-right: solid;
-    border-bottom: none;
-    width:60%;
-    height:100;
-    margin-bottom: 2%;
+    font-size: 4.5vw;
+    font-weight: bold;
+    width: 50%;
+    height: 5%;
+    margin: 5% 25% 5%;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    -webkit-animation: neon 10s linear infinite;
+    
 }
+@-webkit-keyframes neon {
+    0% {color: red;}
+    25% {color: orange;}
+    50% {color: skyblue;}
+    75% {color: purple;}
+    100% {color: olive;}
+}
+
 .Entry{
     max-width: 60%;
     margin-left: 20%;

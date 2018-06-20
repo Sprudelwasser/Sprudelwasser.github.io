@@ -83,19 +83,26 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .Stitle {
-    margin: 5% 20% 5%;
-    color: red;
-    background-color: none;
-    font-size: 30pt;
-    border-top: none;
-    border-left: solid;
-    border-right: solid;
-    border-bottom: none;
-    width:60%;
-    height:100;
-    margin-bottom: 2%;
+    font-size: 4.5vw;
+    font-weight: bold;
+    width: 50%;
+    height: 5%;
+    margin: 5% 25% 5%;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    -webkit-animation: neon 10s linear infinite;
+    
 }
+@-webkit-keyframes neon {
+    0% {color: red;}
+    25% {color: orange;}
+    50% {color: skyblue;}
+    75% {color: purple;}
+    100% {color: olive;}
+}
+
 .Entry{
     max-width: 60%;
     margin-left: 20%;
@@ -134,13 +141,14 @@ img {
     margin: 2% 40% 2%;    
     padding: 18px;
     width: 20%;
+    height: 10%;
     border: none;
     text-align: center;
     outline: solid;
     outline-width: 4px;
     outline-color: green;
-    font-size: 20pt;
-    text-align: center;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 2vw;
     transition: 0.5s;
 }
 
@@ -157,7 +165,9 @@ img {
     border-bottom: none;
     border-width: 6px;
     border-color: lightgreen;
-    font-size: 22pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 2vw;
+    font-weight: bolder;
     transition: 0.5s;
 }
 
@@ -181,21 +191,21 @@ img {
 }
 
 .p{
-    font-size: 15pt;
     font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.3vw;
     color: cyan;
     margin: 1%;
 }
 
 .p1{
-    font-size: 15pt;
     font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.3vw;
     color: lightgreen;
     margin: 1%;
 }
 .p2{
-    font-size: 15pt;
     font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.3vw;
     color: white;
     margin: 1%;
 }
@@ -207,14 +217,16 @@ margin: 5% 20% 5%;
 }
 
 .ImgGrid {
-width: 60%;
-height: 500px;
-margin: 5% 20% 5%;
+width: 50%;
+height: 30%;
+margin: 5% 25% 5%;
 }
 
 .ph2 {
     margin: 2%;
-    font-size: 30pt;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-align: center;
+    font-size: 4vw;
     color: white;
 }
 
